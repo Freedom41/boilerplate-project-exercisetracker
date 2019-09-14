@@ -145,7 +145,6 @@ app.get("/api/exercise/log", async (req, res) => {
   //Parses and checks the date
   from = moment(from).toString();
   to = moment(to).toString();
-  console.log(from)
     if ( to == "Invalid date" || from == "Invalid date" ) {
       res.json({
         "From/to": "Incorrect from or to format, use YYYY/MM/DD"
